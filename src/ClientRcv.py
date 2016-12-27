@@ -17,4 +17,5 @@ class ClientRcv(threading.Thread):
 			client, addr = self.srv.accept()
 			if not self.running:
 				break
+			print ("Cliente conectado")
 			self.pool.clients.append(client)
