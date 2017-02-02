@@ -14,4 +14,4 @@ clrcv.start()
 msgrcv.start()
 while True:
 	msg = input()
-	pool.write(msg)
+	pool.write(msg.encode())

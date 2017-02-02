@@ -5,5 +5,5 @@ class ClientPool:
 		self.clients = []
 	def write(self, data):
 		for cl in self.clients:
-			cl.send(data.encode())
+			cl.send(data)
 			print("Mensaje enviado correctamente... o no")
